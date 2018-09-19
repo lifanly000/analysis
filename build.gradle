@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.acoderleex'
 
 android {
     compileSdkVersion 27
@@ -35,19 +36,23 @@ android {
 }
 
 
-buildscript {
+//buildscript {
+//
+//    repositories {
+//        google()
+//        jcenter()
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.61"
+//        // NOTE: Do not place your application dependencies here; they belong
+//        // in the individual module build.gradle files
+//    }
+//}
 
-    repositories {
-        google()
-        jcenter()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.61"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
+repositories {
+    mavenCentral()
 }
 
 
